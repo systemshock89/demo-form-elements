@@ -1,0 +1,45 @@
+// USER VARIABLES SECTION
+:root {
+	--color-primary-700: #205EB0;
+	--color-primary-500: #2A75DB;
+	--color-primary-100: #AAC9F1;
+	--color-secondary-700: #B0B5BD;
+	--color-secondary-500: #F8F8F8;
+	--color-text-800: #0B0A0A;
+	--color-text-500: #585050;
+	--color-text-300: #887C7C;
+	--color-text-200: #DFDADA;
+	--color-text-100: #F8F8F8;
+	--box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme{
+	--color-primary-700: #AAC9F1;
+	--color-primary-500: #B9D5FC;
+	--color-primary-100: #F0F6FF;
+	--color-secondary-700: #0C0D0D;
+	--color-secondary-500: #424242;
+	--color-text-800: #F3F3F3;
+	--color-text-500: #DFDADA;
+	--color-text-200: #585050;
+	--color-text-100: #1E1D1D;
+	--box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.2);
+}
+
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/custom-select/build/custom-select'; // custom-select
+
+// FONTS LOAD SECTION
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+	}
+}
+
+@include font('Ubuntu-my', normal, 400, '../fonts/ubuntu-regular-webfont.woff2');
+@include font('Ubuntu-my', normal, 500, '../fonts/ubuntu-medium-webfont.woff2');
+@include font('Montserrat-my', normal, 400, '../fonts/Montserrat-Regular.woff2');

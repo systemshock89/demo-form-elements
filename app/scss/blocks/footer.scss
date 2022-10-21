@@ -1,0 +1,22 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 256px;
+
+  background: url('../img/dist/footer-bg.png') top center no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  &__copyright{
+    font-size: 14px;
+    padding: 23px;
+    font-family: Montserrat-my, sans-serif;
+    a{
+      margin: 0 5px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

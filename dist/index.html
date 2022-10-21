@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Test inputs</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="img/favicon.png">
+
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<div class="page">
+
+		<section class="preferences">
+			<h1>Preferences</h1>
+			<p>On this page you can configure the main system parameters available for customization</p>
+
+			<form action="" method="post" class="preferences__form">
+				<div class="preferences__form-field-wrapper">
+					<div class="preferences__form-field">
+						<label for="preferences__field-title" class="preferences__field-name">Company Title</label>
+						<div class="preferences__field-control">
+							<input name="title" id="preferences__field-title" type="text" value="Star and Moon">
+						</div>
+					</div>
+
+					<div class="preferences__form-field">
+						<label for="preferences__field-day" class="preferences__field-name">First Day</label>
+						<div class="preferences__field-control">
+							<select name="day" id="preferences__field-day">
+								<option>Monday</option>
+								<option>Sunday</option>
+								<option>System</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="preferences__form-field">
+						<label for="preferences__field-width" class="preferences__field-name">Container Width</label>
+						<div class="preferences__field-control">
+							<select name="width" id="preferences__field-width">
+								<option selected>Fixed</option>
+								<option>100%</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="preferences__form-field">
+						<label for="preferences__field-page" class="preferences__field-name">Homepage</label>
+						<div class="preferences__field-control">
+							<select name="page" id="preferences__field-page">
+								<option selected>Starred Projects</option>
+								<option>Starred Projects 2</option>
+								<option>Starred Projects 3</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="preferences__form-field">
+						<label for="preferences__field-size" class="preferences__field-name">Indent Size</label>
+						<div class="preferences__field-control">
+							<input name="size" id="preferences__field-size" type="text" disabled value="Default">
+						</div>
+					</div>
+
+					<div class="preferences__form-field personal-code">
+						<div class="preferences__form-field-wrap">
+							<label for="preferences__field-code1" class="preferences__field-name">Personal Code</label>
+							<div class="preferences__field-control">
+								<div class="preferences__field-control-wrap">
+									<input name="code1" id="preferences__field-code1" type="text" value="1645">
+								</div>
+								<div class="devider">-</div>
+								<div class="preferences__field-control-wrap">
+									<input name="code2" id="preferences__field-code2" type="text" value="1566">
+								</div>
+								<div class="devider">-</div>
+								<div class="preferences__field-control-wrap">
+									<input name="code3" id="preferences__field-code3" type="text" value="1249">
+								</div>
+							</div>
+						</div>
+
+						<div class="digits">12 digits</div>
+					</div>
+
+					<div class="preferences__form-field theme">
+						<div class="preferences__field-name">Theme</div>
+						<div class="preferences__field-control">
+							<div class="radio-custom">
+								<input type="radio" name="theme" id="light-theme" checked>
+								<label for="light-theme">
+									<span class="icon"></span>
+									Light
+								</label>
+							</div>
+							<div class="radio-custom">
+								<input type="radio" name="theme" id="dark-theme" value="dark-theme">
+								<label for="dark-theme">
+									<span class="icon"></span>
+									Dark
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="preferences__btns-wrap">
+					<button class="button button__primary" type="submit" id="button-apply">Apply and Save</button>
+					<button class="button button__reset" type="reset">Cancel</button>
+				</div>
+
+			</form>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__copyright">2020-2022 <a href="#">Terms of Service</a> and <a href="#">Conditions</a></div>
+		</footer>
+	</div>
+
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>

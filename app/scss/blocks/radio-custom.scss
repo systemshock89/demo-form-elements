@@ -1,0 +1,50 @@
+.radio-custom{
+  margin-left: 5px;
+  input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .icon{
+    &:before{
+      transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+    }
+  }
+  label{
+    padding-left: 24px;
+    position: relative;
+    line-height: 1;
+    .icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      margin-left: -24px;
+      width: 14px;
+      height: 14px;
+      box-shadow: 0 0 0 2px var(--color-text-500);
+      border-radius: 50%;
+      transition: box-shadow 0.1s ease-in-out;
+      &:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: transparent;
+        border-radius: 50%;
+      }
+    }
+  }
+  input:checked + label .icon{
+    box-shadow: 0 0 0 2px var(--color-primary-500);
+    transition: box-shadow 0.1s ease-in-out;
+    &:before {
+      background: var(--color-primary-500);
+      transition: background 0.1s ease-in-out;
+    }
+  }
+  &:not(:last-child){
+    margin-bottom: 13px;
+  }
+}

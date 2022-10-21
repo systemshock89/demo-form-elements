@@ -1,0 +1,61 @@
+.custom-select-opener{
+  display: flex;
+  align-items: center;
+
+  color: var(--color-text-800);
+  border: 1px solid var(--color-text-300);
+  background-color: var(--color-text-200);
+  border-radius: 6px;
+  height: 32px;
+  padding: 2px 8px;
+  svg{
+    position: absolute;
+    right: 13px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: transform 0.25s ease-in-out;
+  }
+  &:hover{
+    box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.1s ease-in-out;
+  }
+  &:focus{
+    border-color: var(--color-primary-500);
+    transition: border-color 0.1s ease-in-out;
+    outline: none;
+    svg{
+
+      path{
+        fill: var(--color-primary-500);
+        transition: fill 0.1s ease-in-out;
+      }
+    }
+  }
+}
+.custom-select-container{
+  &.is-open{
+    .custom-select-opener{
+      svg{
+        transform: scale(1, -1);
+        transition: transform 0.25s ease-in-out;
+      }
+    }
+  }
+}
+.custom-select-option.is-selected:before{
+  display: none;
+}
+.custom-select-panel{
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  background-color: var(--color-secondary-500);
+  margin-top: 1px;
+  transition: none;
+}
+.custom-select-option{
+  height: 32px;
+  &.has-focus{
+    background-color: var(--color-text-200);
+  }
+}
