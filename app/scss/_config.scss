@@ -34,6 +34,7 @@
 @mixin font($fname, $fstyle, $fweight, $furl) {
 	@font-face {
 		font-family: $fname;
+		font-display: swap;
 		font-style: $fstyle;
 		font-weight: $fweight;
 		src: url($furl) format('woff2');
