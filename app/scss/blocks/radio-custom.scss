@@ -44,6 +44,9 @@
       transition: background 0.1s ease-in-out;
     }
   }
+  input:focus + label .icon{
+    outline: 3px solid var(--color-primary-500);
+  }
   &:not(:last-child){
     margin-bottom: 13px;
   }
