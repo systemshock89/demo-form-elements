@@ -4,7 +4,7 @@
 	<div class="page">
 
 		<section class="preferences">
-			<h1>Preferences</h1>
+			<h1 class="h1">Preferences</h1>
 			<p>On this page you can configure the main system parameters available for customization</p>
 
 			<form action="" method="post" class="preferences__form">
@@ -12,14 +12,14 @@
 					<div class="preferences__form-field">
 						<label for="preferences__field-title" class="preferences__field-name">Company Title</label>
 						<div class="preferences__field-control">
-							<input name="title" id="preferences__field-title" type="text" value="Star and Moon">
+							<input name="title" id="preferences__field-title" class="input" type="text" value="Star and Moon">
 						</div>
 					</div>
 
 					<div class="preferences__form-field">
 						<label for="preferences__field-day" class="preferences__field-name">First Day</label>
 						<div class="preferences__field-control">
-							<select name="day" id="preferences__field-day">
+							<select name="day" id="preferences__field-day" class="select">
 								<option>Monday</option>
 								<option>Sunday</option>
 								<option>System</option>
@@ -30,7 +30,7 @@
 					<div class="preferences__form-field">
 						<label for="preferences__field-width" class="preferences__field-name">Container Width</label>
 						<div class="preferences__field-control">
-							<select name="width" id="preferences__field-width">
+							<select name="width" id="preferences__field-width" class="select">
 								<option selected>Fixed</option>
 								<option>100%</option>
 							</select>
@@ -40,7 +40,7 @@
 					<div class="preferences__form-field">
 						<label for="preferences__field-page" class="preferences__field-name">Homepage</label>
 						<div class="preferences__field-control">
-							<select name="page" id="preferences__field-page">
+							<select name="page" id="preferences__field-page" class="select">
 								<option selected>Starred Projects</option>
 								<option>Starred Projects 2</option>
 								<option>Starred Projects 3</option>
@@ -51,24 +51,24 @@
 					<div class="preferences__form-field">
 						<label for="preferences__field-size" class="preferences__field-name">Indent Size</label>
 						<div class="preferences__field-control">
-							<input name="size" id="preferences__field-size" type="text" disabled value="Default">
+							<input name="size" id="preferences__field-size" class="input" type="text" disabled value="Default">
 						</div>
 					</div>
 
-					<div class="preferences__form-field personal-code">
+					<div class="preferences__form-field preferences__form-field_personal-code">
 						<div class="preferences__form-field-wrap">
 							<label for="preferences__field-code1" class="preferences__field-name">Personal Code</label>
 							<div class="preferences__field-control">
 								<div class="preferences__field-control-wrap">
-									<input name="code1" id="preferences__field-code1" type="text" value="1645">
+									<input name="code1" id="preferences__field-code1" class="input" type="text" value="1645">
 								</div>
 								<div class="devider">-</div>
 								<div class="preferences__field-control-wrap">
-									<input name="code2" id="preferences__field-code2" type="text" value="1566">
+									<input name="code2" id="preferences__field-code2" class="input" type="text" value="1566">
 								</div>
 								<div class="devider">-</div>
 								<div class="preferences__field-control-wrap">
-									<input name="code3" id="preferences__field-code3" type="text" value="1249">
+									<input name="code3" id="preferences__field-code3" class="input" type="text" value="1249">
 								</div>
 							</div>
 						</div>
@@ -76,7 +76,7 @@
 						<div class="digits">12 digits</div>
 					</div>
 
-					<div class="preferences__form-field theme">
+					<div class="preferences__form-field preferences__form-field_theme">
 						<div class="preferences__field-name">Theme</div>
 						<div class="preferences__field-control">
 							<div class="radio-custom">
@@ -106,7 +106,7 @@
 		</section>
 
 		<footer class="footer">
-			<div class="footer__copyright">2020-2022 <a href="#">Terms of Service</a> and <a href="#">Conditions</a></div>
+			<div class="footer__copyright">2020-2022 <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Conditions</a></div>
 		</footer>
 	</div>
 

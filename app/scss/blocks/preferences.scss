@@ -11,7 +11,7 @@
     &:not(:last-child){
       margin-bottom: 24px;
     }
-    &.personal-code{
+    &_personal-code{
       display: block;
       .preferences__form-field-wrap{
         display: flex;
@@ -33,7 +33,7 @@
         color: var(--color-text-300);
       }
     }
-    &.theme{
+    &_theme{
       align-items: flex-start;
       padding-top: 5px;
     }

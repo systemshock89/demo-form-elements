@@ -27,17 +27,17 @@
 }
 
 // IMPORT SECTION
-@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
-@import 'node_modules/custom-select/build/custom-select'; // custom-select
+@import 'node_modules/normalize.css/normalize';
+@import 'node_modules/custom-select/build/custom-select';
 
 // FONTS LOAD SECTION
-@mixin font($fname, $fstyle, $fweight, $furl) {
+@mixin font($fName, $fStyle, $fWeight, $fUrl) {
 	@font-face {
-		font-family: $fname;
+		font-family: $fName;
 		font-display: swap;
-		font-style: $fstyle;
-		font-weight: $fweight;
-		src: url($furl) format('woff2');
+		font-style: $fStyle;
+		font-weight: $fWeight;
+		src: url($fUrl) format('woff2');
 	}
 }
 
