@@ -1,7 +1,7 @@
 {
-	"name": "Test inputs",
+	"name": "Form elements",
 	"version": "1.0.0",
-	"description": "Test inputs",
+	"description": "",
 	"main": "index.js",
 	"author": "System Shock",
 	"type": "module",
