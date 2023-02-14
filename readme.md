@@ -1,5 +1,5 @@
 <h1>Form elements</h1>
-<p><a href="https://systemshock89.github.io/test-inputs/">See example</a></p>
+<p><a href="https://systemshock89.github.io/demo-form-elements/">See demo</a></p>
 
 <h2>Used features</h2>
 <ul>
